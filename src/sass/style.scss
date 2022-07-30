@@ -1,0 +1,29 @@
+/*!
+Theme Name: Central Visa
+Theme URI: https://github.com/patrykjankowski/CentralVisa
+Author: Patryk Jankowski – Softcraft
+Author URI: https://softcraft.pl
+Description: Central Visa
+Version: 1.0.0
+Text Domain: Central Visa
+*/
+
+
+//styles
+@import "variables";
+@import "base";
+@import "grid";
+
+@import "slider";
+@import "button";
+@import "checkbox";
+@import "forms";
+@import "navigation";
+@import "footer";
+@import "utilities";
+@import "others";
+
+//tailwind
+//@tailwind base;
+@tailwind components;
+@tailwind utilities;
