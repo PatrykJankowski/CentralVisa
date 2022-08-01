@@ -8,27 +8,7 @@ body:not(.home) {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 80px;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  background: $white;
-
-  @media (min-width: $resolution-xl) {
-    height: auto;
-    position: relative;
-    margin: 0;
-    background: transparent;
-  }
-
-  &--bg {
-
-  }
-
-  &--bg-on-toggle {
-
-  }
+  height: 150px;
 
   &__logo {
     display: flex;
@@ -82,24 +62,40 @@ body:not(.home) {
 
   &__nav-desktop {
     display: none;
-    height: 80px;
     align-items: center;
 
     ul {
       display: flex;
-      flex: 1;
-      justify-content: space-between;
+      margin: 0;
       list-style: none;
-      padding: 0;
 
       li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &:last-of-type a {
+          display: block;
+          width: fit-content;
+          margin-left: 4rem;
+          padding: 25px 35px;
+          background-color: $primary;
+          color: $white;
+          line-height: 1;
+          cursor: pointer;
+        }
+
+        &:nth-last-of-type(2) a {
+          margin-left: 4rem;
+          color: $primary;
+          font-weight: 900;
+        }
 
         a {
+          margin-left: 2rem;
           @include font-size(18);
           font-weight: 400;
           color: $text-color;
-          text-transform: uppercase;
-          transition: 1s ease;
         }
       }
     }
