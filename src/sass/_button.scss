@@ -1,9 +1,41 @@
 .button {
   display: block;
   width: fit-content;
-  padding: 25px 35px;
-  background-color: $black;
-  color: $white;
+  padding: 18px 40px;
+  background-color: $secondary;
+  font-weight: 700;
+  color: $black;
   line-height: 1;
   cursor: pointer;
+  transition: all 600ms;
+
+  &:hover {
+    color: $white;
+    background-color: $primary;
+  }
+
+  &--black {
+    background-color: $black;
+    color: $white;
+  }
+
+  &--blue {
+    background-color: $blue;
+    color: $white;
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    color: $blue;
+
+    &:hover {
+      color: $black;
+      background-color: $white;
+    }
+  }
 }

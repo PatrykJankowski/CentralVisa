@@ -1,0 +1,35 @@
+.accordion {
+  width: 100%;
+  padding: 20px 0;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $primary;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none; 
+  transition: 0.4s;
+}
+  
+.active, .accordion:hover {
+  //background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: $blue;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

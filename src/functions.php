@@ -44,15 +44,15 @@ add_filter('mime_types', 'webp_upload_mimes');
 
 add_action('after_setup_theme', 'setup');
 function setup() {
-    load_theme_textdomain('rehability', get_template_directory() . '/languages');
+    load_theme_textdomain('centralvisa', get_template_directory() . '/languages');
     add_theme_support( 'title-tag' );
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'post-thumbnails' );
     //global $content_width;
     //if (!isset($content_width)) $content_width = 640;
-    register_nav_menu('nav-menu',__('Menu nawigacyjne'));
-    register_nav_menu('nav-menu-mobile',__('Menu mobilne'));
-    register_nav_menu('nav-menu-footer',__('Menu w stopce'));
+    register_nav_menu('nav-menu',__('Main menu'));
+    register_nav_menu('nav-menu-footer-1',__('Footer menu 1'));
+    register_nav_menu('nav-menu-footer-2',__('Footer menu 2'));
 }
 
 
@@ -93,7 +93,7 @@ function filter_wp_title( $title ) {
 // Removes from admin menu
 add_action('admin_menu', 'remove_admin_menus');
 function remove_admin_menus() {
-    remove_menu_page( 'edit-comments.php' );
+    remove_menu_page('edit-comments.php');
 }
 
 // Removes from post and pages

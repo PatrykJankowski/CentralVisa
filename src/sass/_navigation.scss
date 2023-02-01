@@ -1,14 +1,16 @@
-body:not(.home) {
-  .navbar {
-
-  }
-}
-
 .navbar {
+  position: fixed;
+  z-index: 10;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 150px;
+  height: 100px;
+  background-color: $white;
+
+  @media (min-width: $resolution-xl) {
+    position: static;
+    height: 150px;
+  }
 
   &__logo {
     display: flex;
@@ -67,6 +69,7 @@ body:not(.home) {
     ul {
       display: flex;
       margin: 0;
+      padding: 0;
       list-style: none;
 
       li {
@@ -77,25 +80,28 @@ body:not(.home) {
         &:last-of-type a {
           display: block;
           width: fit-content;
-          margin-left: 4rem;
-          padding: 25px 35px;
+          padding: 18px 35px;
           background-color: $primary;
           color: $white;
           line-height: 1;
           cursor: pointer;
         }
 
-        &:nth-last-of-type(2) a {
+        /*&:nth-last-of-type(2) a {
           margin-left: 4rem;
           color: $primary;
           font-weight: 900;
-        }
+        }*/
 
         a {
-          margin-left: 2rem;
+          margin-left: 1.5rem;
           @include font-size(18);
           font-weight: 400;
           color: $text-color;
+
+          @media (min-width: $resolution-xxl) {
+            margin-left: 2rem;
+          }
         }
       }
     }

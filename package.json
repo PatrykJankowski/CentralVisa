@@ -4,7 +4,7 @@
   "description": "Central Visa",
   "main": "''",
   "dependencies": {
-    "npm": "^8.15.1"
+    "npm": "^8.19.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -17,8 +17,8 @@
     "gulp-watch": "^5.0.1",
     "gulp-webp": "^4.0.1",
     "node-sass": "^7.0.1",
-    "postcss-import": "^14.1.0",
-    "tailwindcss": "^3.1.7"
+    "postcss-import": "^15.0.0",
+    "tailwindcss": "^3.1.8"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV='development' gulp dev",

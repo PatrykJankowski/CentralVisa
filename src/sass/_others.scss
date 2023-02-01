@@ -1,0 +1,53 @@
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $black;
+  border-radius: 50%;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+
+  &.blue {
+    border-color: $blue;
+
+    .arrow {
+      border-color: $blue;
+    }
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+
+    &.right {
+      margin-right: 8px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+  }
+}
+
+
+.attachment-465x250 {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+footer {
+  ul.menu {
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

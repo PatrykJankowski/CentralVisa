@@ -21,7 +21,24 @@ module.exports = {
       'xl': '1200px',
       '2xl': '1480px',
     },
-    extend: {},
+    fontFamily: {
+      'lato': ['Lato'],
+    },
+    extend: {
+      /*gap: {
+        '30': '1.875rem',
+      }*/
+      /*fontFamily: {
+        'sans': ['Source Sans Pro', ...defaultTheme.fontFamily.sans],
+      },*/
+      backgroundImage: {
+        'bg1': "url('/wp-content/themes/centralvisa/img/bg1.webp')",
+        'bg2': "url('/wp-content/themes/centralvisa/img/bg2.webp')",
+        'bg-blue': "url('/wp-content/themes/centralvisa/img/bg-blue.webp')",
+        'bg-map': "url('/wp-content/themes/centralvisa/img/bg-map.webp')",
+        'bg-footer': "url('/wp-content/themes/centralvisa/img/bg-footer.webp')"
+      },
+    },
   },
   plugins: [],
 }
