@@ -332,13 +332,17 @@ $args = array(
 $posts = new WP_Query($args);
 ?>
 
+<?php $section_6 = get_field('section_6'); ?>
 <section class="pt-20 lg:pt-40 pb-20 lg:pb-40">
     <div class="container">
         <div class="flex items-center mb-4">
             <div class="border-solid border-[1px] h-[1px] w-8 mr-4 border-black"></div>
-            Articles
+            <?php echo $section_6['subtitle']; ?>
         </div>
-        <h1 class="text-3xl font-bold mt-0 mb-10 lg:mb-20">We are keeping you updated</h1>
+        <h1 class="text-3xl font-bold mt-0 mb-10 lg:mb-20"><?php echo $section_6['title']; ?></h1>
+        <?php if ($section_6['description']): ?>
+        <p class="font-light lg:font-bold"><?php echo $section_6['description']; ?></p>
+        <? endif ?>
         <div class="grid grid-cols-12 gap-[30px]">
             <?php while ($posts->have_posts()) : $posts->the_post(); ?>
                 <article class="col-span-12 lg:col-span-4 flex flex-col">
