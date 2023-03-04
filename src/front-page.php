@@ -2,8 +2,8 @@
 
 
 <?php $header = get_field('header'); ?>
-<section class="pt-20 lg:pt-0 pb-20 lg:pb-40">
-    <div class="container">
+<section class="pt-20 lg:pt-0 pb-20 lg:pb-32">
+    <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">
             <div class="col-span-12 lg:col-span-5 flex flex-col justify-center">
                 <div class="border-solid border-2 w-16 mb-6 border-primary"></div>
@@ -27,8 +27,8 @@
 
 
 <?php $section_1 = get_field('section_1'); ?>
-<section class="text-white bg-primary bg-bg-map bg-cover pt-20 lg:pt-40 pb-20 lg:pb-40">
-    <div class="container">
+<section class="text-white bg-primary bg-bg-map bg-cover pt-20 lg:pt-32 pb-20 lg:pb-32">
+    <div class="container mx-auto px-4">
         <div class="flex items-center mb-4">
             <div class="border-solid border-[1px] h-[1px] w-8 mr-4 border-white"></div>
             <?php echo $section_1['subtitle']; ?>
@@ -36,13 +36,13 @@
         <h1 class="text-3xl lg:text-4xl font-bold mt-0 mb-20 lg:mb-28"><?php echo $section_1['title']; ?></h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
-            <div class="text-center lg:text-left">
-                <svg class="mb-6" width="69" height="67" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="49" height="55"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.448 6.304h48.27v54.601H9.449V6.304Z" fill="#fff"/></mask><g mask="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.126 10.429c-4.651 0-8.433 3.676-8.433 8.192v29.835c.014 2.23.926 4.331 2.565 5.907 1.636 1.57 3.892 2.472 6.117 2.417l.348-.003H45.04c4.649-.05 8.442-3.781 8.433-8.319V23.712L40.352 10.43H22.125Zm.181 50.476c-3.397 0-6.61-1.279-9.036-3.61-2.446-2.35-3.805-5.484-3.824-8.828V18.62c0-6.79 5.687-12.317 12.68-12.317h19.13c.578 0 1.13.228 1.532.632l14.338 14.517c.38.383.592.897.592 1.428v25.575c.014 6.79-5.665 12.375-12.657 12.446l-22.673.003h-.082Z" fill="#fff"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M55.583 25.479H47.78c-5.18-.014-9.39-4.117-9.39-9.144v-8c0-1.138.95-2.062 2.123-2.062 1.172 0 2.123.924 2.123 2.062v8c0 2.76 2.31 5.01 5.15 5.019h7.796c1.172 0 2.123.924 2.123 2.062 0 1.139-.951 2.063-2.123 2.063Z" fill="#fff"/></svg>
+            <div class="text-center lg:text-left flex flex-col">
+                <svg class="self-center lg:self-start mb-6" width="69" height="67" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="49" height="55"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.448 6.304h48.27v54.601H9.449V6.304Z" fill="#fff"/></mask><g><path fill-rule="evenodd" clip-rule="evenodd" d="M22.126 10.429c-4.651 0-8.433 3.676-8.433 8.192v29.835c.014 2.23.926 4.331 2.565 5.907 1.636 1.57 3.892 2.472 6.117 2.417l.348-.003H45.04c4.649-.05 8.442-3.781 8.433-8.319V23.712L40.352 10.43H22.125Zm.181 50.476c-3.397 0-6.61-1.279-9.036-3.61-2.446-2.35-3.805-5.484-3.824-8.828V18.62c0-6.79 5.687-12.317 12.68-12.317h19.13c.578 0 1.13.228 1.532.632l14.338 14.517c.38.383.592.897.592 1.428v25.575c.014 6.79-5.665 12.375-12.657 12.446l-22.673.003h-.082Z" fill="#fff"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M55.583 25.479H47.78c-5.18-.014-9.39-4.117-9.39-9.144v-8c0-1.138.95-2.062 2.123-2.062 1.172 0 2.123.924 2.123 2.062v8c0 2.76 2.31 5.01 5.15 5.019h7.796c1.172 0 2.123.924 2.123 2.062 0 1.139-.951 2.063-2.123 2.063Z" fill="#fff"/></svg>
                 <h2 class="text-xl font-extrabold mb-2 font-lato"><?php echo $section_1['col_1_title']; ?></h2>
                 <p class="font-light font-lato"><?php echo $section_1['col_1_description']; ?></p>
             </div>
-            <div class="text-center lg:text-left">
-                <svg class="mb-6" width="69" height="67" viewBox="0 0 69 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="text-center lg:text-left flex flex-col">
+                <svg class="self-center lg:self-start mb-6" width="69" height="67" viewBox="0 0 69 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.7914 18.1062C25.6995 18.1062 25.6076 18.1172 25.5157 18.1392C16.9879 20.1495 10.0508 28.999 10.0508 37.865C10.0508 49.019 19.5262 58.094 31.1751 58.094C41.6755 58.094 50.4503 50.9302 52.041 41.0577C52.0525 40.9752 52.0927 40.736 51.8573 40.4692C51.6333 40.219 51.2773 40.0705 50.904 40.0705C46.8525 40.0705 43.7601 40.1585 41.3453 40.2245C35.4993 40.3922 33.0817 40.4555 30.6927 38.7587C27.0921 36.204 26.7877 31.815 26.7877 18.9065C26.7877 18.6755 26.6844 18.483 26.4776 18.329C26.2853 18.1832 26.0412 18.1062 25.7914 18.1062M31.1751 62.219C17.1516 62.219 5.7438 51.2932 5.7438 37.865C5.7438 27.217 14.151 16.569 24.4849 14.1325C26.0986 13.7557 27.8329 14.1077 29.1365 15.0812C30.3798 16.0162 31.0947 17.4105 31.0947 18.9065C31.0947 30.9652 31.5197 34.2102 33.2568 35.445C34.3967 36.2507 35.9587 36.2425 41.2219 36.1022C43.6682 36.0335 46.8009 35.9455 50.904 35.9455C52.5406 35.9455 54.0825 36.6165 55.1277 37.7852C56.0982 38.8715 56.5232 40.2905 56.2992 41.6875C54.3812 53.5812 43.8147 62.219 31.1751 62.219" fill="white"/>
                     <mask id="mask0_1845_10284" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="35" y="3" width="31" height="29">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M35.817 3.52295H65.7332V31.8185H35.817V3.52295Z" fill="white"/>
@@ -54,8 +54,8 @@
                 <h2 class="text-xl font-extrabold mb-2 font-lato"><?php echo $section_1['col_2_title']; ?></h2>
                 <p class="font-light font-lato"><?php echo $section_1['col_2_description']; ?></p>
             </div>
-            <div class="text-center lg:text-left">
-                <svg class="mb-6" width="68" height="67" viewBox="0 0 68 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="text-center lg:text-left flex flex-col">
+                <svg class="self-center lg:self-start mb-6" width="68" height="67" viewBox="0 0 68 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M50.6354 34.1743C49.5937 34.1743 48.6849 33.4291 48.5349 32.3978C48.3736 31.2676 49.1804 30.2253 50.3438 30.0686C53.288 29.6671 55.5102 27.1866 55.5159 24.2936C55.5159 21.4253 53.3984 18.9998 50.4797 18.5351C49.3247 18.3508 48.5406 17.2893 48.7302 16.1646C48.9227 15.0398 50.007 14.2863 51.1705 14.4651C56.1472 15.2598 59.7622 19.3958 59.7622 24.2991C59.7509 29.2353 55.9547 33.4703 50.9298 34.1551C50.8308 34.1688 50.7317 34.1743 50.6354 34.1743" fill="white"/>
                     <mask id="mask0_1845_10283" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="53" y="39" width="12" height="13">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M53.7249 39.276H64.4651V51.7323H53.7249V39.276Z" fill="white"/>
@@ -77,8 +77,8 @@
 
 
 <?php $section_2 = get_field('section_2'); ?>
-<section class="text-white pt-20 lg:pt-40 pb-20 lg:pb-40">
-    <div class="container">
+<section class="text-white pt-20 lg:pt-32 pb-20 lg:pb-32">
+    <div class="container mx-auto px-4">
         <div class="grid grid-cols-3 gap-[30px]">
             <div class="col-span-full lg:col-span-1">
                 <img src="/wp-content/themes/centralvisa/img/woman.webp" alt="woman" class="max-w-full">
@@ -143,8 +143,8 @@
 
 
 <?php $section_3 = get_field('section_3'); ?>
-<section class="text-white bg-bg1 bg-cover bg-[position:58%] pt-20 lg:pt-40 pb-20 lg:pb-40">
-    <div class="container">
+<section class="text-white bg-bg1 bg-cover bg-[position:58%] pt-20 lg:pt-32 pb-20 lg:pb-32">
+    <div class="container mx-auto px-4">
         <div class="flex items-center mb-4">
             <div class="border-solid border-[1px] h-[1px] w-8 mr-4 border-white"></div>
             <?php echo $section_3['subtitle']; ?>
@@ -221,8 +221,9 @@
 
 
 <?php $section_4 = get_field('section_4'); ?>
-<section class="pt-20 lg:pt-40 pb-20 lg:pb-40 bg-bg-map bg-cover bg-right">
-    <div class="container">
+<?php $post_id = pll_get_post(28, pll_current_language() ); ?>
+<section class="pt-20 lg:pt-32 pb-20 lg:pb-32 bg-bg-map bg-cover bg-right">
+    <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
             <div>
                 <div class="flex items-center mb-4">
@@ -244,19 +245,19 @@
             </div>
             <div>
                 <div class="font-light font-lato rounded-xl pt-10 pb-10 pl-6 pr-6 bg-white shadow-[5px_5px_5px_rgba(0,0,0,0.3)]">
-                    <h3 class="text-2xl text-primary text-center font-lato leading-none m-0"><?php echo get_field('product_1', 28)['title'] ?><br><span class="text-2xl text-black"><?php echo get_field('product_1', 28)['price'] ?></span></h3>
-                    <div class="font-bold text-center mb-8"><?php echo get_field('product_1', 28)['subtitle'] ?></div>
+                    <h3 class="text-2xl text-primary text-center font-lato leading-none m-0 font-bold"><?php echo get_field('product_1', $post_id)['title'] ?><br><span class="text-2xl text-black font-bold"><?php echo get_field('product_1', $post_id)['price'] ?></span></h3>
+                    <div class="font-bold text-center mb-8"><?php echo get_field('product_1', $post_id)['subtitle'] ?></div>
                     
                     <?php for($i=1; $i<=6; $i++): ?>
-                    <?php if(get_field('product_1', 28)['point_'.$i]): ?>
+                    <?php if(get_field('product_1', $post_id)['point_'.$i]): ?>
                     <div class="flex items-center mt-4">
                         <svg width="32" height="33" fill="none" class="min-w-[32px]" xmlns="http://www.w3.org/2000/svg"><path d="M31 16.86c0 8.285-6.716 15-15 15-8.284 0-15-6.715-15-15 0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15Z" stroke="#FDC10B" stroke-width="2"/><path d="m7 16.134 7.361 7.36L24.686 13.17" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="m7 16.134 7.361 7.36L24.686 13.17" stroke="#FDC10B" stroke-width="2" stroke-linecap="round"/></svg>
-                        <div class="ml-2"><?php echo get_field('product_1', 28)['point_'.$i]; ?></div>
+                        <div class="ml-2"><?php echo get_field('product_1', $post_id)['point_'.$i]; ?></div>
                     </div>
                     <?php endif ?>
                     <?php endfor ?>
 
-                    <?php $link = get_field('product_1', 28)['link'];
+                    <?php $link = get_field('product_1', $post_id)['link'];
                     if($link):
                         $link_url = $link['url'];
                         $link_title = $link['title'];
@@ -268,19 +269,19 @@
             </div>
             <div>
                 <div class="font-light font-lato rounded-xl pt-10 pb-10 pl-6 pr-6 bg-white shadow-[5px_5px_5px_rgba(0,0,0,0.3)]">
-                    <h3 class="text-2xl text-primary text-center leading-none m-0 font-lato"><?php echo get_field('product_2', 28)['title'] ?><br><span class="text-2xl text-black"><?php echo get_field('product_2', 28)['price'] ?></span></h3>
-                    <div class="font-bold text-center mb-8"><?php echo get_field('product_2', 28)['subtitle'] ?></div>
+                    <h3 class="text-2xl text-primary text-center leading-none m-0 font-lato font-bold"><?php echo get_field('product_2', $post_id)['title'] ?><br><span class="text-2xl text-black font-bold"><?php echo get_field('product_2', $post_id)['price'] ?></span></h3>
+                    <div class="font-bold text-center mb-8"><?php echo get_field('product_2', $post_id)['subtitle'] ?></div>
 
                     <?php for($i=1; $i<=6; $i++): ?>
-                    <?php if(get_field('product_2', 28)['point_'.$i]): ?>
+                    <?php if(get_field('product_2', $post_id)['point_'.$i]): ?>
                     <div class="flex items-center mt-4">
                         <svg width="32" height="33" fill="none" class="min-w-[32px]" xmlns="http://www.w3.org/2000/svg"><path d="M31 16.86c0 8.285-6.716 15-15 15-8.284 0-15-6.715-15-15 0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15Z" stroke="#FDC10B" stroke-width="2"/><path d="m7 16.134 7.361 7.36L24.686 13.17" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="m7 16.134 7.361 7.36L24.686 13.17" stroke="#FDC10B" stroke-width="2" stroke-linecap="round"/></svg>
-                        <div class="ml-2"><?php echo get_field('product_2', 28)['point_'.$i]; ?></div>
+                        <div class="ml-2"><?php echo get_field('product_2', $post_id)['point_'.$i]; ?></div>
                     </div>
                     <?php endif ?>
                     <?php endfor ?>
 
-                    <?php $link = get_field('product_2', 28)['link'];
+                    <?php $link = get_field('product_2', $post_id)['link'];
                     if($link):
                         $link_url = $link['url'];
                         $link_title = $link['title'];
@@ -296,8 +297,8 @@
 
 
 <?php $section_5 = get_field('section_5'); ?>
-<section class="pt-20 lg:pt-40 pb-20 lg:pb-40 bg-bg2 bg-cover bg-left-top">
-    <div class="container">
+<section class="pt-20 lg:pt-32 pb-20 lg:pb-32 bg-bg2 bg-cover bg-left-top">
+    <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">
             <div class="lg:col-span-5"></div>
             <div class="col-span-12 lg:col-span-7">
@@ -333,8 +334,8 @@ $posts = new WP_Query($args);
 ?>
 
 <?php $section_6 = get_field('section_6'); ?>
-<section class="pt-20 lg:pt-40 pb-20 lg:pb-40">
-    <div class="container">
+<section class="pt-20 lg:pt-32 pb-20 lg:pb-32">
+    <div class="container mx-auto px-4">
         <div class="flex items-center mb-4">
             <div class="border-solid border-[1px] h-[1px] w-8 mr-4 border-black"></div>
             <?php echo $section_6['subtitle']; ?>
@@ -346,8 +347,8 @@ $posts = new WP_Query($args);
         <div class="grid grid-cols-12 gap-[30px]">
             <?php while ($posts->have_posts()) : $posts->the_post(); ?>
                 <article class="col-span-12 lg:col-span-4 flex flex-col">
-                    <?php the_post_thumbnail(array(465, 250), array('class' => 'border-radius-5 object-cover w-full')); ?>
-                    <h2 class="text-lg font-bold mt-4 mb-2"><?php the_title(); ?></h2>
+                    <?php the_post_thumbnail(array(465, 250), array('class' => 'border-radius-5 object-cover w-full h-[250px]')); ?>
+                    <h2 class="text-lg font-bold mt-4 mb-2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <div class="flex-grow font-light"><?php echo wp_trim_words(get_the_content(), 30, '...' ); ?></div>
                     <a class="mt-4 font-bold text-black flex" href="<?php the_permalink(); ?>">Read more <svg class="ml-1 mt-[3px]" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.79 16.605a.75.75 0 0 1-.067-.984l.067-.077L15.397 4.938a.75.75 0 0 1 1.128.984l-.067.077L5.85 16.605a.75.75 0 0 1-1.06 0Z" fill="#2A2A2A"/><path d="M7.391 6.236a.75.75 0 0 1-.114-1.492l.11-.008 8.538-.018a.75.75 0 0 1 .744.64l.008.111-.018 8.538a.75.75 0 0 1-1.492.108l-.008-.11.016-7.786-7.784.017Z" fill="#2A2A2A"/></svg></a>
                 </article>

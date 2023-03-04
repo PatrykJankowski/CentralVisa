@@ -3,8 +3,8 @@
 <?php get_header(); ?>
 
 <?php $section_1 = get_field('section_1'); ?>
-<section class="pt-20 pb-20 lg:pb-40">
-    <div class="container">
+<section class="pt-20 pb-20 lg:pb-32">
+    <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">
             <div class="col-span-12 lg:col-span-9">
                 <h1 class="text-2xl lg:text-4xl font-bold m-0"><?php echo $section_1['title']; ?></h1>
@@ -92,21 +92,6 @@
                     ?>
                     <a class="button button--black mt-8" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                     <?php endif; ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<?php $section_2 = get_field('section_2'); ?>
-<section class="pt-20 lg:pt-40 pb-20 lg:pb-40 bg-grey">
-    <div class="container">
-        <div class="grid grid-cols-12 gap-[30px]">
-            <div class="col-span-full">
-                <h1 class="text-2xl lg:text-3xl text-primary"><?php echo $section_2['title']; ?></h1>
-                <div>
-                    <?php echo $section_2['description']; ?>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<section class="pt-10 lg:pt-20 pb-20 lg:pb-40">
-    <div class="container">
+<section class="pt-10 lg:pt-20 pb-20 lg:pb-32">
+    <div class="container mx-auto px-4">
         <?php while (have_posts()) : the_post(); ?>
             <article>
                 <div class="grid grid-cols-12 lg:gap-10">

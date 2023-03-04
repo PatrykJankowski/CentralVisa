@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="section">
-    <div class="container">
+    <div class="container mx-auto px-4">
         <div class="row">
             <div class="col">
                 <?php while (have_posts()) : the_post(); ?>

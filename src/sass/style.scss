@@ -12,19 +12,15 @@ Text Domain: Central Visa
 //styles
 @import "variables";
 @import "base";
-@import "grid";
-
 @import "slider";
 @import "button";
-@import "checkbox";
 @import "forms";
 @import "accordion";
 @import "navigation";
-@import "footer";
 @import "utilities";
 @import "others";
 
 //tailwind
-//@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;

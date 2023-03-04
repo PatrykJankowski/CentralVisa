@@ -1,28 +1,28 @@
 html {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
-}
 
-body {
-  margin: 0;
-}
-
-main {
-  padding-top: 100px;
-
-  @media (min-width: $resolution-xl) {
-    padding-top: 0;
+  body {
+    margin: 0;
   }
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'EB Garamond', sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
+  
+  main {
+    padding-top: 100px;
+  
+    @media (min-width: $resolution-xl) {
+      padding-top: 0;
+    }
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'EB Garamond', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    margin: 0 0 1rem;
+  }
 }

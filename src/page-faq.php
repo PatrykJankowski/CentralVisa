@@ -2,8 +2,8 @@
 
 <?php get_header(); ?>
 
-<section class="pt-20 pb-20 lg:pb-40">
-    <div class="container">
+<section class="pt-20 pb-20 lg:pb-32">
+    <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">
             <div class="col-span-12 lg:col-span-9">
                 <h1 class="text-2xl lg:text-4xl font-bold m-0"><?php echo get_field('title'); ?></h1>

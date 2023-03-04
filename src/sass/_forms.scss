@@ -1,82 +1,84 @@
-input, textarea {
-  width: 100%;
-  height: 54px;
-  padding: 0 20px;
-  font-family: "Lato", serif;
-  font-size: 1rem;
-  font-weight: 400;
-  border: 1px solid #ADAFB0;
-  border-radius: 5px;
+body {
+  input, textarea {
+    width: 100%;
+    height: 54px;
+    padding: 0 20px;
+    font-family: "Lato", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid #ADAFB0;
+    border-radius: 5px;
 
-  &.newsletter__email {
-    background: transparent;
-    border-color: $white;
-    color: $white;
-    border-radius: 2px;
-  }
-}
-
-textarea {
-  height: 200px;
-  min-height: 64px;
-  max-width: 100%;
-  min-width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/*input[type=email] {
-  width: 100%;
-  background: transparent;
-  color: #fff;
-  padding: 10px;
-  border: 1px solid white;
-}*/
-
-.wpcf7-acceptance {
-  label {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-  }
-}
-
-input[type=checkbox] {
-  width: 20px;
-  margin-right: 10px;
-}
-
-input[type=submit] {
-  width: fit-content;
-  background: $blue;
-  color: $white;
-  font-weight: bold;
-  border: none;
-  padding: 0 40px;
-  cursor: pointer;
-
-  &.newsletter__btn {
-    position: static;
-    margin-top: 20px;
-    background: $white;
-    color: $primary;
-    border-radius: 2px;
-
-    @media (min-width: $resolution-lg) {
-      position: absolute;
-      right: 40px;
-      margin-top: 0;
+    &.newsletter__email {
+      background: transparent;
+      border-color: $white;
+      color: $white;
+      border-radius: 2px;
     }
   }
-}
 
-.newsletter {
-  position: relative;
-  padding: 20px;
-  border: 2px solid $white;
-  border-radius: 20px;
+  textarea {
+    height: 200px;
+    min-height: 64px;
+    max-width: 100%;
+    min-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-  @media (min-width: $resolution-lg) {
-    padding: 40px;
+  /*input[type=email] {
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid white;
+  }*/
+
+  .wpcf7-acceptance {
+    label {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  input[type=checkbox] {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  input[type=submit] {
+    width: fit-content;
+    background: $blue;
+    color: $white;
+    font-weight: bold;
+    border: none;
+    padding: 0 40px;
+    cursor: pointer;
+
+    &.newsletter__btn {
+      position: static;
+      margin-top: 20px;
+      background: $white;
+      color: $primary;
+      border-radius: 2px;
+
+      @media (min-width: $resolution-lg) {
+        position: absolute;
+        right: 40px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .newsletter {
+    position: relative;
+    padding: 20px;
+    border: 2px solid $white;
+    border-radius: 20px;
+
+    @media (min-width: $resolution-lg) {
+      padding: 40px;
+    }
   }
 }
