@@ -8,7 +8,7 @@
                     <div class="col-span-12 lg:col-span-6">
                         <div class="flex flex-col justify-center flex-1">
                             <time class="block text-greyDark mb-4"><?php echo apply_filters('the_date', get_the_date()); ?></time>
-                            <h2 class="text-xl lg:text-3xl mt-0 mb-3"><?php the_title(); ?></h2>
+                            <h1 class="text-xl lg:text-3xl mt-0 mb-3"><?php the_title(); ?></h2>
                             <?php if (has_excerpt()): ?>
                             <div class="font-light text-lg"><?php the_excerpt(); ?></div>
                             <?php endif; ?>
@@ -19,7 +19,7 @@
                         <?php if (has_post_thumbnail()) { the_post_thumbnail(array(700, 450), array('class' => 'border-radius-5 object-cover w-full h-[450px]')); } ?>
                     </div>
 
-                    <div class="col-span-12 lg:columns-2 lg:gap-10 font-light">
+                    <div class="col-span-12 lg:columns-2 lg:gap-10 font-light content">
                         <?php the_content(); ?>
                     </div>
                 </div>
