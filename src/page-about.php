@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<?php $section_1 = get_field('section_1'); ?>
+<?php $section_1 = get_field('section_1') ?? []; ?>
 <section class="pt-20 pb-20 lg:pb-32">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">
@@ -37,7 +37,7 @@
 </section>
 
 
-<?php $section_2 = get_field('section_2'); ?>
+<?php $section_2 = get_field('section_2') ?? []; ?>
 <section class="pt-20 lg:pt-32 pb-20 lg:pb-32 bg-bg2 bg-cover bg-left-top">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px] mb-20">
@@ -65,7 +65,7 @@
     </div>
 </section>
 
-<?php $section_3 = get_field('section_3'); ?>
+<?php $section_3 = get_field('section_3') ?? []; ?>
 <section class="pt-20 lg:pt-32 pb-20 lg:pb-32">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">

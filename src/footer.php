@@ -1,7 +1,7 @@
 </main>
 <?php $post_id = pll_get_post(30, pll_current_language() ); ?>
-<?php $contact = get_field('contact', $post_id); ?>
-<?php $footer = get_field('footer', 44); ?>
+<?php $contact = get_field('contact', $post_id) ?? []; ?>
+<?php $footer = get_field('footer', 44) ?? []; ?>
 <footer class="pt-20 lg:pt-32 pb-20 bg-primary xl:bg-bg-footer bg-contain bg-no-repeat bg-right text-white">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">

@@ -13,7 +13,7 @@
         <div class="grid grid-cols-12 gap-[30px]">
             <div class="col-span-12 lg:col-span-9">
                 <?php for($i=1; $i<=12; $i++): ?>
-                <?php if(get_field('qa_'.$i)['question']): ?>
+                <?php if(get_field('qa_'.$i) && get_field('qa_'.$i)['question']): ?>
                     <button class="accordion accordion-<?php echo $i; ?>"><?php echo get_field('qa_' . $i)['question']; ?></button>
                     <div class="panel">
                         <?php echo get_field('qa_'.$i)['answer'] ?>

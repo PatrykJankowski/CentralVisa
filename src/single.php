@@ -7,10 +7,13 @@
                 <div class="grid grid-cols-12 lg:gap-10">
                     <div class="col-span-12 lg:col-span-6">
                         <div class="flex flex-col justify-center flex-1">
-                            <time class="block text-greyDark mb-4"><?php echo apply_filters('the_date', get_the_date()); ?></time>
-                            <h1 class="text-xl lg:text-3xl mt-0 mb-3"><?php the_title(); ?></h2>
+                            <time class="block mb-4"><?php echo apply_filters('the_date', get_the_date()); ?></time>
+                            <?php if (get_field('subheader')): ?>
+                            <div class="font-bold text-grey-dark text-xl mb-1"><?php echo get_field('subheader') ?></div>
+                            <?php endif ?>
+                            <h1 class="font-lato text-xl lg:text-3xl mt-0 mb-3"><?php the_title(); ?></h2>
                             <?php if (has_excerpt()): ?>
-                            <div class="font-light text-lg"><?php the_excerpt(); ?></div>
+                            <div class="font-light text-xl"><?php the_excerpt(); ?></div>
                             <?php endif; ?>
                         </div>
                     </div>

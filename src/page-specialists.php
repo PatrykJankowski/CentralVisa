@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<?php $section_1 = get_field('section_1'); ?>
+<?php $section_1 = get_field('section_1') ?? []; ?>
 <section class="pt-20 pb-20 lg:pb-32">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">

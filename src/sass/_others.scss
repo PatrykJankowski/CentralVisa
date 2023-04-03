@@ -51,3 +51,42 @@ footer {
     }
   }
 }
+
+.screen-reader-text {
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.navigation.pagination {
+  display: flex;
+  justify-content: center;
+  
+  .page-numbers {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+
+    &:hover {
+      border: 1px solid #000;
+    }
+
+    &.current {
+      background: #F4F4F4;
+
+      &:hover {
+        border: none;
+      }
+    }
+  }
+
+  .next, .prev {
+    font-weight: bold;
+  }
+}

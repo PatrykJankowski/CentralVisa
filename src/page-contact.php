@@ -2,13 +2,15 @@
 
 <?php get_header(); ?>
 
-<?php $contact = get_field('contact'); ?>
+<?php $contact = get_field('contact') ?? []; ?>
 <section class="pt-20 pb-20 lg:pb-32">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">
             <div class="col-span-12 lg:col-span-9">
                 <h1 class="text-2xl lg:text-4xl font-bold m-0"><?php echo $contact['title']; ?></h1>
+                <?php if (isset($contact['description'])): ?>
                 <p class="font-light mt-6 mb-20"><?php echo $contact['description']; ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <div class="grid grid-cols-12 gap-[30px]">

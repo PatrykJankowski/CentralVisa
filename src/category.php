@@ -2,9 +2,11 @@
 
 <?php
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$categories = get_the_category();
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
+    'category__and' => $categories[0]->cat_ID,
     'posts_per_page' => 9,
     'paged' => $paged,
 );
@@ -38,7 +40,7 @@ $posts = new WP_Query($args);
             <div class="col-span-12 lg:col-span-3 flex flex-col mb-20">
                 <div class="border-2 border-grey border-radius-1 p-4">
                     <?php
-                        foreach(get_categories() as $category)
+                    foreach(get_categories() as $category)
                         {
                             echo '<a href="'.get_category_link($category->cat_ID).'" class="block py-2" />'.$category->cat_name.'</a>';
                         }

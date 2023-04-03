@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<?php $header = get_field('header'); ?>
+<?php $header = get_field('header') ?? []; ?>
 <section class="pt-20 lg:pt-0 pb-20 lg:pb-32">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">
@@ -26,7 +26,7 @@
 </section>
 
 
-<?php $section_1 = get_field('section_1'); ?>
+<?php $section_1 = get_field('section_1') ?? []; ?>
 <section class="text-white bg-primary bg-bg-map bg-cover pt-20 lg:pt-32 pb-20 lg:pb-32">
     <div class="container mx-auto px-4">
         <div class="flex items-center mb-4">
@@ -76,7 +76,7 @@
 </section>
 
 
-<?php $section_2 = get_field('section_2'); ?>
+<?php $section_2 = get_field('section_2') ?? []; ?>
 <section class="text-white pt-20 lg:pt-32 pb-20 lg:pb-32">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-3 gap-[30px]">
@@ -142,7 +142,7 @@
 </section>
 
 
-<?php $section_3 = get_field('section_3'); ?>
+<?php $section_3 = get_field('section_3') ?? []; ?>
 <section class="text-white bg-bg1 bg-cover bg-[position:58%] pt-20 lg:pt-32 pb-20 lg:pb-32">
     <div class="container mx-auto px-4">
         <div class="flex items-center mb-4">
@@ -220,7 +220,7 @@
 </section>
 
 
-<?php $section_4 = get_field('section_4'); ?>
+<?php $section_4 = get_field('section_4') ?? []; ?>
 <?php $post_id = pll_get_post(28, pll_current_language() ); ?>
 <section class="pt-20 lg:pt-32 pb-20 lg:pb-32 bg-bg-map bg-cover bg-right">
     <div class="container mx-auto px-4">
@@ -296,7 +296,7 @@
 </section>
 
 
-<?php $section_5 = get_field('section_5'); ?>
+<?php $section_5 = get_field('section_5') ?? []; ?>
 <section class="pt-20 lg:pt-32 pb-20 lg:pb-32 bg-bg2 bg-cover bg-left-top">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-[30px]">
@@ -323,17 +323,15 @@
 
 
 <?php
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
-    'posts_per_page' => 3,
-    'paged' => $paged,
+    'posts_per_page' => 2,
 );
 $posts = new WP_Query($args);
 ?>
 
-<?php $section_6 = get_field('section_6'); ?>
+<?php $section_6 = get_field('section_6') ?? []; ?>
 <section class="pt-20 lg:pt-32 pb-20 lg:pb-32">
     <div class="container mx-auto px-4">
         <div class="flex items-center mb-4">
@@ -343,7 +341,7 @@ $posts = new WP_Query($args);
         <h1 class="text-3xl font-bold mt-0 mb-10 lg:mb-20"><?php echo $section_6['title']; ?></h1>
         <?php if ($section_6['description']): ?>
         <p class="font-light lg:font-bold"><?php echo $section_6['description']; ?></p>
-        <? endif ?>
+        <?php endif ?>
         <div class="grid grid-cols-12 gap-[30px]">
             <?php while ($posts->have_posts()) : $posts->the_post(); ?>
                 <article class="col-span-12 lg:col-span-4 flex flex-col">
