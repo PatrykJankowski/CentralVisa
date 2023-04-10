@@ -320,13 +320,22 @@
         </div>
     </div>
 </section>
+<section class="bg-blue py-10">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-12 gap-[30px]">
+            <div class="col-span-full text-white text-xl">
+                <?php echo $section_5['subsection']; ?>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <?php
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
-    'posts_per_page' => 2,
+    'posts_per_page' => 3,
 );
 $posts = new WP_Query($args);
 ?>

@@ -142,14 +142,18 @@
 
 
 <?php $section_2 = get_field('section_2'); ?>
-<section class="pt-20 lg:pt-32 pb-20 lg:pb-32 bg-grey">
+<section class="pb-20 lg:pb-32" id="form">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-12 gap-[30px]">
-            <div class="col-span-full">
+        <div class="grid grid-cols-12 gap-[30px] border-2 border-primary p-8">
+            <div class="col-span-12 lg:col-span-6">
                 <h1 class="text-2xl lg:text-3xl text-primary"><?php echo $section_2['title']; ?></h1>
                 <div>
                     <?php echo $section_2['description']; ?>
                 </div>
+                <?php echo do_shortcode($section_2['shortcode']); ?>
+            </div>
+            <div class="col-span-12 lg:col-span-6 hidden lg:flex items-center justify-center">
+                <img src="/wp-content/themes/centralvisa/img/specialists-form.webp">
             </div>
         </div>
     </div>

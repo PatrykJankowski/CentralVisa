@@ -121,5 +121,13 @@ function remove_media_comment_status($open, $post_id) {
 }
 
 
+function custom_query( $query ){
+    if(is_category()) {
+        $query->set( 'posts_per_page', '12' );
+    }
+}
+add_action('pre_get_posts', 'custom_query');
+
+
 // remove <p> from the form
 //add_filter('wpcf7_autop_or_not', '__return_false');
