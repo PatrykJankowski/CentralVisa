@@ -131,3 +131,17 @@ add_action('pre_get_posts', 'custom_query');
 
 // remove <p> from the form
 //add_filter('wpcf7_autop_or_not', '__return_false');
+
+
+// Allow users who can edit pages to edit and delete the privacy policy page
+add_action('map_meta_cap', 'custom_manage_privacy_options', 1, 4);
+function custom_manage_privacy_options($caps, $cap, $user_id, $args)
+{
+  if (!is_user_logged_in()) return $caps;
+
+  if ('manage_privacy_options' === $cap) {
+    $manage_name = is_multisite() ? 'manage_network' : 'manage_options';
+    $caps = array_diff($caps, [ $manage_name ]);
+  }
+  return $caps;
+}

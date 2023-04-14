@@ -33,7 +33,12 @@
             <div class="border-solid border-[1px] h-[1px] w-8 mr-4 border-white"></div>
             <?php echo $section_1['subtitle']; ?>
         </div>
-        <h1 class="text-3xl lg:text-4xl font-bold mt-0 mb-20 lg:mb-28"><?php echo $section_1['title']; ?></h1>
+        <h1 class="text-3xl lg:text-4xl font-bold mt-0 <?php if(!$section_1['description']) : ?> mb-20 lg:mb-28<?php endif; ?>"><?php echo $section_1['title']; ?></h1>
+        <?php if($section_1['description']) : ?>
+        <div class="font-light lg:text-lg mb-20 lg:mb-28 mt-4">
+            <?php echo $section_1['description']; ?>
+        </div>
+        <?php endif; ?>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
             <div class="text-center lg:text-left flex flex-col">

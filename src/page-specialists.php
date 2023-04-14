@@ -144,7 +144,7 @@
 <?php $section_2 = get_field('section_2'); ?>
 <section class="pb-20 lg:pb-32" id="form">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-12 gap-[30px] border-2 border-primary p-8">
+        <div class="grid grid-cols-12 lg:gap-[30px] border-2 border-primary p-8">
             <div class="col-span-12 lg:col-span-6">
                 <h1 class="text-2xl lg:text-3xl text-primary"><?php echo $section_2['title']; ?></h1>
                 <div>
