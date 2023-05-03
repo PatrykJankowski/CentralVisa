@@ -26,10 +26,24 @@
                     <div class="col-span-12 lg:col-span-4">
                         <h2 class="text-lg font-bold mb-3"><?php echo $footer['column_1_title']; ?></h2>
                         <p>
-                            <?php echo $contact['phone']; ?>,
-                            <?php echo $contact['email']; ?>,
-                            <?php echo $contact['postcode']; ?>, <?php echo $contact['city']; ?>,
-                            <?php echo $contact['street']; ?>
+                            <?php if($contact['phone']) : ?>
+                            <?php echo $contact['phone']; ?><br>
+                            <?php endif ?>
+                            <?php if($contact['email']) : ?>
+                            <?php echo $contact['email']; ?><br>
+                            <?php endif ?>
+                            <?php if($contact['street']) : ?>
+                            <?php echo $contact['street']; ?><br>
+                            <?php endif ?>
+                            <?php if($contact['apartment']) : ?>
+                            <?php echo $contact['apartment']; ?><br>
+                            <?php endif ?>
+                            <?php if($contact['city']) : ?>
+                            <?php echo $contact['city']; ?><br>
+                            <?php endif ?>
+                            <?php if($contact['postcode']) : ?>
+                            <?php echo $contact['postcode']; ?><br>
+                            <?php endif ?>
                         </p>
                     </div>
                     <div class="col-span-12 lg:col-span-4">

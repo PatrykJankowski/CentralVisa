@@ -21,6 +21,17 @@ $posts = new WP_Query($args);
         </div>
 
         <div class="grid grid-cols-12 gap-[30px]">
+            <div class="col-span-12 lg:col-span-3 flex flex-col mb-20">
+                <div class="border-2 border-grey border-radius-1 p-4">
+                    <?php
+                        foreach(get_categories() as $category)
+                        {
+                            echo '<a href="'.get_category_link($category->cat_ID).'" class="block py-2" />'.$category->cat_name.'</a>';
+                        }
+                    ?>
+                </div>
+            </div> 
+
             <div class="col-span-12 lg:col-span-9 flex flex-col mb-20">
                 <div class="grid grid-cols-12 gap-[30px]">
                     <?php while ($posts->have_posts()) : $posts->the_post(); ?>
@@ -33,18 +44,7 @@ $posts = new WP_Query($args);
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
                 </div>    
-            </div>
-
-            <div class="col-span-12 lg:col-span-3 flex flex-col mb-20">
-                <div class="border-2 border-grey border-radius-1 p-4">
-                    <?php
-                        foreach(get_categories() as $category)
-                        {
-                            echo '<a href="'.get_category_link($category->cat_ID).'" class="block py-2" />'.$category->cat_name.'</a>';
-                        }
-                    ?>
-                </div>
-            </div>    
+            </div>   
         </div>
 
         <div class="grid grid-cols-12 gap-[30px]">
